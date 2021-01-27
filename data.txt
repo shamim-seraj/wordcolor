@@ -1,0 +1,113 @@
+#a83b0b terracotta
+#d5bda3 beige
+#007fff azure
+#be6d33 caramel
+#800020 burgundy
+#fcfbff chalk
+#464646 charcoal
+#9b4722 cinnamon
+#009a76 emerald
+#ffb21e gold
+#800000 maroon
+#ed9708 saffron
+#bc0000 scarlet
+#fffff0 ivory
+#d0322c vermilion
+#5e0a19 wine
+#ffff00 lemon
+#00ff00 leaf
+#ff0000 red light
+#00ffff ocean
+#0000ff robin bird
+#ff0000 blood
+#808080 dark clouds
+#808080 ashes
+#e20000 cranberry juice 
+#d19fe8 lavender
+#800000 maroon dress
+#0000ff clear sky
+#710421 red wine
+#cd8a44 wooden table
+#ff0000 youtube
+#3b589f facebook
+#1da1f2 twitter
+#FF6347 tomatoes
+#d5cec6 cauliflower
+#6bae45 cabbage
+#f06f22 carrot
+#417022 capsicum
+#e5bb59 potatoes
+#fcf5c2 vanilla icecream
+#cf100a tomato sauce
+#4d2a2d brown chair
+#000000 black horse
+#fb6002 orange orchard
+#fa8072 salmon fillet
+#ffffff baby's breath
+#ffffff milk
+#00ffff aqua
+#ffbf00 dijon mustard
+#fb9102 bonfire
+#ffffff white
+#00ff00 grass
+#ffffff pages of books
+#0f2f65 denim jacket
+#000000 chalk board
+#ffffff white board
+#ffffff bowl of white rice
+#64883d mud puddle
+#fce7ac sand dunes
+#39fb03 parrot
+#00ff00 forest
+#581845 magenta
+#e4c239 camel
+#c0c0c0 silver jewel
+#808000 olive
+#008000 green
+#f06292 pink
+#a6acaf storm
+#f08eb7 strawberry smoothie
+#ff0000 red couch
+#fee68c golden retriever puppy
+#ffffff toilet paper
+#0000ff blue
+#808000 olive oil
+#000000 sunglass
+#800080 purple
+#000000 black umbrella
+#ff0000 danger
+#ff0000 red
+#000000 black ink pen
+#ff0000 red carpet
+#000000 black jeep
+#ff00ff fuschia
+#008080 teal
+#6c3f30 chocolate
+#ffffff white sheets
+#e8c874 loaf of bread
+#ffffff teeth
+#ffffff salt
+#ffffff sugar
+#6c3f30 chocolate milkshake
+#ffffff white house
+#000000 batman's car
+#000000 black hair
+#000000 crow
+#ffffff polar bear
+#e0c34c lion
+#808080 rhino
+#ff0000 national flag of nepal
+#ff0000 national flag of china
+#5f659a blue whale
+#808080 planet mercury
+#ffff00 sulpher
+#780f0b bromine
+#a31511 planet mars
+#fcfa8f fluorine gas
+#cc7984 raw bacon
+#b10803 apple
+#fee638 ripe banana
+#c15c3c pile of bricks
+#000000 coal
+#fcd602 kolkata taxi
+#ffffff snowman
