@@ -1,5 +1,6 @@
 import math
 import numpy as np
+import DuckDuckGoImages as ddg
 
 
 def color_diff(c1, c2):
@@ -8,6 +9,14 @@ def color_diff(c1, c2):
     x = tuple(int(c1[i:i+2], 16) for i in (0, 2, 4))
     y = tuple(int(c2[i:i+2], 16) for i in (0, 2, 4))
     return math.sqrt((x[0] - y[0])**2 + (x[1] - y[1]) ** 2 + (x[2] - y[2]) **2)
+
+
+def get_images():
+    f = open(r'data.txt', 'r')
+    for x in f:
+        str = x[8:]
+        ddg.download(str, str, 20)
+    f.close()
 
 
 def import_data():
