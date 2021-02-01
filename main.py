@@ -11,14 +11,6 @@ def color_diff(c1, c2):
     return math.sqrt((x[0] - y[0])**2 + (x[1] - y[1]) ** 2 + (x[2] - y[2]) **2)
 
 
-def get_images():
-    f = open(r'data.txt', 'r')
-    for x in f:
-        str = x[8:]
-        ddg.download(str, str, 20)
-    f.close()
-
-
 def import_data():
     f = open(r'data.txt', 'r')
     data = []
