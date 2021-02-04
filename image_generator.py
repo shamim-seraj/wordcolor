@@ -15,8 +15,6 @@ def download_images():
         print("Download completed for: ", phrase)
         print("10s interval")
         time.sleep(10)
-        # color generate
-        cg.load_images('tomatoes')
         break
     f.close()
 
