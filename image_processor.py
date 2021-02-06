@@ -54,7 +54,7 @@ def generate_most_common_color(phrase):
     perc = dict(sorted(perc.items()))
     print("Final Cluster Centers: ")
     print(clt.cluster_centers_)
-    print("Percentage of Ceners: ")
+    print("Percentage of Centers: ")
     print(perc)
 
     # finding the max counter value for clusters
@@ -63,7 +63,7 @@ def generate_most_common_color(phrase):
     # print the cluster center with max counter value
     print("Keys: ")
     print(max_key)
-    return clt.cluster_centers_[max_key]
+    return '#%02x%02x%02x' % tuple([round(x) for x in clt.cluster_centers_[max_key[0]]])
 
 
 def generate_cluster_centers(img):
