@@ -10,26 +10,22 @@ def color_diff(c1, c2):
     return math.sqrt((x[0] - y[0])**2 + (x[1] - y[1]) ** 2 + (x[2] - y[2]) **2)
 
 
-def convert_color(c):
-    return '#FFFFFF'
-
-
-def calculate_mean(data):
+def calculate_mean(original_data, estimated_data):
     diff = []
-    for x in data:
-        diff.append(color_diff(convert_color(x[1]), x[0]))
+    for item in estimated_data:
+        diff.append(color_diff(original_data[item], estimated_data[item]))
     return round(np.mean(diff), 2)
 
 
-def calculate_standard_deviation(data):
+def calculate_standard_deviation(original_data, estimated_data):
     diff = []
-    for x in data:
-        diff.append(color_diff(convert_color(x[1]), x[0]))
+    for item in estimated_data:
+        diff.append(color_diff(original_data[item], estimated_data[item]))
     return round(np.std(diff), 2)
 
 
-def calculate_variance(data):
+def calculate_variance(original_data, estimated_data):
     diff = []
-    for x in data:
-        diff.append(color_diff(convert_color(x[1]), x[0]))
+    for item in estimated_data:
+        diff.append(color_diff(original_data[item], estimated_data[item]))
     return round(np.var(diff), 2)
