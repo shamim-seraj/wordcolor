@@ -1,6 +1,5 @@
-import math
 import numpy as np
-import DuckDuckGoImages as ddg
+import math
 
 
 def color_diff(c1, c2):
@@ -11,15 +10,6 @@ def color_diff(c1, c2):
     return math.sqrt((x[0] - y[0])**2 + (x[1] - y[1]) ** 2 + (x[2] - y[2]) **2)
 
 
-def import_data():
-    f = open(r'data.txt', 'r')
-    data = []
-    for x in f:
-        data.append((x[:7], x[8:][:-1]))
-    f.close()
-    return data
-
-
 def convert_color(c):
     return '#FFFFFF'
 
@@ -28,25 +18,18 @@ def calculate_mean(data):
     diff = []
     for x in data:
         diff.append(color_diff(convert_color(x[1]), x[0]))
-    return np.mean(diff)
+    return round(np.mean(diff), 2)
 
 
 def calculate_standard_deviation(data):
     diff = []
     for x in data:
         diff.append(color_diff(convert_color(x[1]), x[0]))
-    return np.std(diff)
+    return round(np.std(diff), 2)
 
 
 def calculate_variance(data):
     diff = []
     for x in data:
         diff.append(color_diff(convert_color(x[1]), x[0]))
-    return np.var(diff)
-
-
-if __name__ == '__main__':
-    data = import_data()
-    print('Mean: ' + str(round(calculate_mean(data), 2)))
-    print('Standard Deviation: ' + str(round(calculate_standard_deviation(data), 2)))
-    print('Variance: ' + str(round(calculate_variance(data), 2)))
+    return round(np.var(diff), 2)
