@@ -8,7 +8,7 @@ import os
 
 
 def download_images(img_count):
-    f = open(r'data.txt', 'r')
+    f = open(r'../data.txt', 'r')
     for x in f:
         phrase = x[8:][:-1]
         ddg.download(phrase, "images/" + phrase, img_count)

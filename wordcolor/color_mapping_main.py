@@ -1,7 +1,5 @@
-import image_processor as ip
 import os
-import stat_calculator as sc
-
+from wordcolor import stat_calculator as sc, image_processor as ip
 
 if __name__ == '__main__':
 
@@ -25,7 +23,7 @@ if __name__ == '__main__':
     f.close()
 
     # display the original and the estimated color for each phrase
-    f = open(r'data.txt', 'r')
+    f = open(r'../data.txt', 'r')
     original_data = {}
     for x in f:
         original_data[x[8:][:-1]] = x[:7]
