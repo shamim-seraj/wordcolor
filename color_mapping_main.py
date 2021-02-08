@@ -6,14 +6,17 @@ import stat_calculator as sc
 if __name__ == '__main__':
 
     # download 20 images in a directory per phrase that are in the data.txt file
-    ip.download_images(20)
+    ip.download_images(5)
 
     # loop through all the directories and estimate a color for each phrase
     dir_list = os.listdir("images")
-    print(dir_list)
+    print("Total phrases found: ", len(dir_list))
     estimated_color_list = []
     for directory in dir_list:
+        print("Phrase: ", directory)
+        print("=======================")
         estimated_color_list.append(ip.generate_most_common_color("images/" + directory) + " " + directory)
+        print("=======================\n\n\n")
 
     # dump estimated color in a text file
     f = open("data_estimated.txt", "a")
