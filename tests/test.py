@@ -1,4 +1,4 @@
-import color_mapping_main
+from wordcolor import color_mapping_main
 
 
 def test_mean():
