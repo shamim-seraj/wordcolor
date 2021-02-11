@@ -34,6 +34,12 @@ def copy_items_in_list(percentage, centers, cluster_data):
     return cluster_data
 
 
+def get_max_value_index(values):
+    max_per = max(values.values())
+    max_keys = [k for k, v in values.items() if v == max_per]
+    return max_keys[0]
+
+
 def generate_most_common_color(phrase):
     img_list = os.listdir(phrase)
     print("No of images fetched: ", len(img_list))
@@ -55,9 +61,7 @@ def generate_most_common_color(phrase):
     final_percentage = calculate_percentage(clt)
     print("Percentage of Centers: ", final_percentage)
 
-    # finding the max counter value for clusters
-    max_per = max(final_percentage.values())
-    max_key = [k for k, v in final_percentage.items() if v == max_per]
-    # print the cluster center with max counter value
-    print("Maximum Percentage Center Indices: ", max_key)
-    return '#%02x%02x%02x' % tuple([round(x) for x in clt.cluster_centers_[max_key[0]]])
+    # finding the center with max percentage
+    max_center_index = get_max_value_index(final_percentage)
+    print("Maximum Percentage Center Index: ", max_center_index)
+    return '#%02x%02x%02x' % tuple([round(x) for x in clt.cluster_centers_[max_center_index]])
