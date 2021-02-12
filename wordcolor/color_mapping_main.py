@@ -1,8 +1,13 @@
+"""
+This is the driver module
+"""
+
+
 import os
 from wordcolor import stat_calculator as sc, image_processor as ip
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     # download 20 images in a directory per phrase that are in the data.txt file
     ip.download_images(5)
 
@@ -13,7 +18,8 @@ if __name__ == '__main__':
     for directory in dir_list:
         print("Phrase: ", directory)
         print("=======================")
-        estimated_color_list.append(ip.generate_most_common_color("images/" + directory) + " " + directory)
+        color = ip.get_common_color("images/" + directory)
+        estimated_color_list.append(color + " " + directory)
         print("=======================\n\n\n")
 
     # dump estimated color in a text file

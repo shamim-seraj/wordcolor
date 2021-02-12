@@ -1,24 +1,37 @@
+"""
+This module deals with image processing
+"""
+
+
 import time
+from collections import Counter
+import os
 import cv2 as cv
 import numpy as np
 import DuckDuckGoImages as ddg
 from sklearn.cluster import KMeans
-from collections import Counter
-import os
 
 
 def download_images(img_count):
-    f = open(r'../data.txt', 'r')
-    for x in f:
-        phrase = x[8:][:-1]
+    """
+    :param img_count: no of images to be downloaded per phrase
+    :return: nothing
+    """
+    data_file = open(r'../data.txt', 'r')
+    for line in data_file:
+        phrase = line[8:][:-1]
         ddg.download(phrase, "images/" + phrase, img_count)
         print("Download completed for: ", phrase)
         print("10s interval")
         time.sleep(10)
-    f.close()
+    data_file.close()
 
 
 def calculate_percentage(clt):
+    """
+    :param clt: KMeans cluster object
+    :return: percentage of the cluster centers
+    """
     n_pixels = len(clt.labels_)
     counter = Counter(clt.labels_)  # count how many pixels per cluster
     perc = {}
@@ -28,19 +41,32 @@ def calculate_percentage(clt):
 
 
 def copy_items_in_list(percentage, centers, cluster_data):
-    for i in range(len(percentage)):
-        for j in range(percentage[i]):
-            cluster_data.append(centers[i])
+    """
+    :param percentage: percentage of the cluster centers
+    :param centers: cluster centers
+    :param cluster_data: a list of all cluster centers
+    :return:
+    """
+    for key, value in enumerate(percentage):
+        cluster_data.extend(np.repeat(centers[key], value))
     return cluster_data
 
 
 def get_max_value_index(values):
+    """
+    :param values: list of values
+    :return: index of maximum value
+    """
     max_per = max(values.values())
     max_keys = [k for k, v in values.items() if v == max_per]
     return max_keys[0]
 
 
-def generate_most_common_color(phrase):
+def get_common_color(phrase):
+    """
+    :param phrase: english phrase for which the color to be determined
+    :return: the hex code color
+    """
     img_list = os.listdir(phrase)
     print("No of images fetched: ", len(img_list))
     clt = KMeans(n_clusters=3)
