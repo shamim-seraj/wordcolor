@@ -24,10 +24,8 @@ def test_copy_items_in_list():
     """
     :return: nothing
     """
-    list_items = [10, 20, 30, 10, 10, 10, 20, 20, 20, 20, 30, 30]
-    assert image_processor.copy_items_in_list([3, 4, 2], [10, 20, 30], [10, 20, 30]) == list_items
-    assert image_processor.copy_items_in_list([1, 2, 3], [5, 10, 15], []) == [5, 10, 10, 15, 15, 15]
-    assert image_processor.copy_items_in_list([1, 1, 1], [10, 20, 30], []) == [10, 20, 30]
+    list_items = [[10, 20, 30], [10, 20, 30], [10, 20, 30], [2, 4, 6], [2, 4, 6], [2, 4, 6], [2, 4, 6], [1, 3, 5], [1, 3, 5], [1, 3, 5], [1, 3, 5], [1, 3, 5]]
+    assert image_processor.copy_items_in_list({0: 3, 1: 4, 2: 5}, [[10, 20, 30], [2, 4, 6], [1, 3, 5]], []) == list_items
 
 
 def test_get_max_value_index():

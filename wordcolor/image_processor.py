@@ -47,8 +47,9 @@ def copy_items_in_list(percentage, centers, cluster_data):
     :param cluster_data: a list of all cluster centers
     :return:
     """
-    for key, value in enumerate(percentage):
-        cluster_data.extend(np.repeat(centers[key], value))
+    for key, value in percentage.items():
+        for idx in range(value):
+            cluster_data.append(centers[key])
     return cluster_data
 
 
@@ -73,7 +74,7 @@ def get_common_color(phrase):
     cluster_data = []
     for img_url in img_list:
         url = phrase + "/" + img_url
-        print("Image URL: " + url)
+        print("Applying KMeans on Image : " + url)
         img = cv.imread(url)
         img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
         clt.fit(img.reshape(-1, 3))
@@ -81,13 +82,14 @@ def get_common_color(phrase):
         cluster_data = copy_items_in_list(percentage, clt.cluster_centers_, cluster_data)
 
     # clustering on top of all cluster centers from 20 images
-    print("Size of cluster_data: ", len(cluster_data))
+    print("Applying KMeans on Combined Data of Size: ", len(cluster_data))
     clt.fit(cluster_data)
-    print("Final Cluster Centers: ", clt.cluster_centers_)
+    print("Final three Colors: ", clt.cluster_centers_)
     final_percentage = calculate_percentage(clt)
-    print("Percentage of Centers: ", final_percentage)
+    print("Percentage of Colors: ", final_percentage)
 
     # finding the center with max percentage
     max_center_index = get_max_value_index(final_percentage)
-    print("Maximum Percentage Center Index: ", max_center_index)
-    return '#%02x%02x%02x' % tuple([round(x) for x in clt.cluster_centers_[max_center_index]])
+    final_color = '#%02x%02x%02x' % tuple([round(x) for x in clt.cluster_centers_[max_center_index]])
+    print("Color with Maximum Percentage: ", final_color)
+    return final_color
