@@ -48,5 +48,3 @@ print("\n\n\nData Analysis\n==============")
 print("Mean Difference: ", sc.calculate_mean(original_data, estimated_data))
 print("Standard Deviation: ", sc.calculate_standard_deviation(original_data, estimated_data))
 print("Variance: ", sc.calculate_variance(original_data, estimated_data))
-
-
