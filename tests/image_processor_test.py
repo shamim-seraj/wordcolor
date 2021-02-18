@@ -10,7 +10,7 @@ def test_calculate_percentage():
     """
     :return: nothing
     """
-    img = cv.imread("./28a838a314a04ea199097db1c1d931ef.jpg")
+    img = cv.imread("test_image.jpg")
     print(img.shape)
     img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
     clt = KMeans(n_clusters=3)
