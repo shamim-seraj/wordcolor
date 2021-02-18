@@ -12,12 +12,13 @@ import DuckDuckGoImages as ddg
 from sklearn.cluster import KMeans
 
 
-def download_images(img_count):
+def download_images(img_count, file_path):
     """
     :param img_count: no of images to be downloaded per phrase
+    :param file_path: file to look into
     :return: nothing
     """
-    data_file = open(r'../data.txt', 'r')
+    data_file = open(file_path, 'r')
     for line in data_file:
         phrase = line[8:][:-1]
         ddg.download(phrase, "images/" + phrase, img_count)
