@@ -91,6 +91,6 @@ def get_common_color(phrase):
 
     # finding the center with max percentage
     max_center_index = get_max_value_index(final_percentage)
-    final_color = '#%02x%02x%02x' % tuple([round(x) for x in clt.cluster_centers_[max_center_index]])
-    print("Color with Maximum Percentage: ", final_color)
-    return final_color
+    final_col = '#%02x%02x%02x' % tuple([round(x) for x in clt.cluster_centers_[max_center_index]])
+    print("Color with Maximum Percentage: ", final_col)
+    return final_col
