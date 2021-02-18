@@ -1,8 +1,5 @@
 #ffff00 lemon
 #00ffff ocean
-#ff0000 blood
-#e20000 cranberry juice
-#d19fe8 lavender
 #0000ff clear sky
 #710421 red wine
 #cd8a44 wooden table
@@ -16,5 +13,3 @@
 #b10803 apple
 #fee638 ripe banana
 #c15c3c pile of bricks
-#000000 coal
-#ffffff snowman
