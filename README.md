@@ -1,18 +1,9 @@
 # Features
-For any given word or phrase, it will be able to represent that input data in its HTML color form
+For any given word or phrase, the software would be able to represent the word/phrase into a color. Currently, the software takes words/phrases from a data.txt file(included and can be updated), loops through all of them, download 5(can be updated) images per word/phrase and save them in corresponding directories. Then it again loops through all the directories, processes those images to finally decide/estimate a color for that phrase.
 
 # How to Run
-The existing application is run from command line now. The future plan is to develop a Graphical User Interface where users can input a word or a phrase.
-Now, once the user inputs the following command, the application is going to download images for all the phrases in a previously stored data file and estimate colors for those phrases and save them in another file.
-
-# Sample Usage Code
-To run the application-
+Currently, the application runs from terminal. The future plan is to develop a Graphical User Interface where users can easily input a word or a phrase. To run the application, download the code as a zip file, unzip it, move into the project(wordcolor) folder and run the following commands-
 ```
-python3 color_mapping_main.py
-```
-
-To run the tests-
-```
-pytest image_processor_test.py
-pytest stat_calculator_test.py
+pip3 install -r requirements.txt
+python3 word_color_main.py
 ```
