@@ -76,11 +76,15 @@ def get_common_color(phrase):
     for img_url in img_list:
         url = phrase + "/" + img_url
         print("Applying KMeans on Image : " + url)
-        img = cv.imread(url)
-        img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
-        clt.fit(img.reshape(-1, 3))
-        percentage = calculate_percentage(clt)
-        cluster_data = copy_items_in_list(percentage, clt.cluster_centers_, cluster_data)
+        try:
+            img = cv.imread(url)
+            img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
+            clt.fit(img.reshape(-1, 3))
+            percentage = calculate_percentage(clt)
+            cluster_data = copy_items_in_list(percentage, clt.cluster_centers_, cluster_data)
+        except Exception as ex:
+            print("Could not read broken image")
+            pass
 
     # clustering on top of all cluster centers from 20 images
     print("Applying KMeans on Combined Data of Size: ", len(cluster_data))
