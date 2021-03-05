@@ -3,48 +3,31 @@ This is the driver module
 """
 
 
-import os
-import wordcolor.stat_calculator as sc
 import wordcolor.image_processor as ip
+import DuckDuckGoImages as ddg
+import turtle
 
-# download 20 images in a directory per phrase that are in the data.txt file
-ip.download_images(5, "data.txt")
 
-# loop through all the directories and estimate a color for each phrase
-dir_list = os.listdir("images")
-print("\n\n\nTotal phrases found: ", len(dir_list))
-estimated_color_list = []
-for directory in dir_list:
-    print("\n\nPhrase: ", directory)
-    print("=======================")
-    color = ip.get_common_color("images/" + directory)
-    estimated_color_list.append(color + " " + directory)
+def populate_output_window(eng_phrase, color):
+    t = turtle.Turtle()
+    t.hideturtle()
+    t.fillcolor(color)
+    t.begin_fill()
+    t.circle(100)
+    t.end_fill()
 
-# dump estimated color in a text file
-f = open("data_estimated.txt", "a")
-for item in estimated_color_list:
-    f.write("%s\n" % item)
-f.close()
+    t.penup()
+    style = ('Courier', 30, 'italic')
+    t.setposition(0, -50)
+    t.write(eng_phrase, font=style, align='center')
+    turtle.done()
 
-# display the original and the estimated color for each phrase
-f = open(r'data.txt', 'r')
-original_data = {}
-for x in f:
-    original_data[x[8:][:-1]] = x[:7]
-f.close()
 
-f = open(r'data_estimated.txt', 'r')
-estimated_data = {}
-for x in f:
-    estimated_data[x[8:][:-1]] = x[:7]
-f.close()
+if __name__ == '__main__':
+    phrase = input("Enter the phrase: ")
+    print("Downloading images...\n\n")
+    ddg.download(phrase, "images/" + phrase, 10)
+    common_color = ip.get_common_color_v2("images/" + phrase)
+    populate_output_window(phrase, common_color)
 
-print("\n\n\nEstimated Colors\n=======================")
-for item in estimated_data:
-    print(item + " " + original_data[item] + "(orig) " + estimated_data[item] + "(est)")
 
-# calculate difference between the estimation and the original color
-print("\n\n\nData Analysis\n==============")
-print("Mean Difference: ", sc.calculate_mean(original_data, estimated_data))
-print("Standard Deviation: ", sc.calculate_standard_deviation(original_data, estimated_data))
-print("Variance: ", sc.calculate_variance(original_data, estimated_data))
