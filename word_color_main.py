@@ -2,49 +2,31 @@
 This is the driver module
 """
 
-
-import os
-import wordcolor.stat_calculator as sc
+from flask import Flask
+from flask import render_template
+from flask import request
+app = Flask(__name__)
 import wordcolor.image_processor as ip
+import DuckDuckGoImages as ddg
+import os
 
-# download 20 images in a directory per phrase that are in the data.txt file
-ip.download_images(5, "data.txt")
 
-# loop through all the directories and estimate a color for each phrase
-dir_list = os.listdir("images")
-print("\n\n\nTotal phrases found: ", len(dir_list))
-estimated_color_list = []
-for directory in dir_list:
-    print("\n\nPhrase: ", directory)
-    print("=======================")
-    color = ip.get_common_color("images/" + directory)
-    estimated_color_list.append(color + " " + directory)
+@app.route('/')
+def index(name=None):
+    return render_template('hello.html', name=name)
 
-# dump estimated color in a text file
-f = open("data_estimated.txt", "a")
-for item in estimated_color_list:
-    f.write("%s\n" % item)
-f.close()
 
-# display the original and the estimated color for each phrase
-f = open(r'data.txt', 'r')
-original_data = {}
-for x in f:
-    original_data[x[8:][:-1]] = x[:7]
-f.close()
-
-f = open(r'data_estimated.txt', 'r')
-estimated_data = {}
-for x in f:
-    estimated_data[x[8:][:-1]] = x[:7]
-f.close()
-
-print("\n\n\nEstimated Colors\n=======================")
-for item in estimated_data:
-    print(item + " " + original_data[item] + "(orig) " + estimated_data[item] + "(est)")
-
-# calculate difference between the estimation and the original color
-print("\n\n\nData Analysis\n==============")
-print("Mean Difference: ", sc.calculate_mean(original_data, estimated_data))
-print("Standard Deviation: ", sc.calculate_standard_deviation(original_data, estimated_data))
-print("Variance: ", sc.calculate_variance(original_data, estimated_data))
+@app.route('/color')
+def color():
+    phrase = request.args.get('word')
+    # check if this phrase already exists
+    path = 'images/' + phrase
+    if os.path.isdir(path):
+        if len(os.listdir(path)) > 0:
+            print('Image directory already exists for the phrase: ' + phrase)
+    else:
+        print("Downloading images...\n\n")
+        ddg.download(phrase, "images/" + phrase, 5)
+    common_color = ip.get_common_color_v2("images/" + phrase)
+    data = {'phrase': phrase, 'color': common_color}
+    return render_template('color.html', data=data)
