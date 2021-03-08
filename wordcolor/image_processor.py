@@ -6,12 +6,12 @@ This module deals with image processing
 import time
 from collections import Counter
 import os
+import multiprocessing
+from os import getpid
 import cv2 as cv
 import numpy as np
 import DuckDuckGoImages as ddg
 from sklearn.cluster import KMeans
-import multiprocessing
-from os import getpid
 
 
 def download_images(img_count, file_path):
@@ -51,7 +51,7 @@ def copy_items_in_list(percentage, centers, cluster_data):
     :return:
     """
     for key, value in percentage.items():
-        for idx in range(value):
+        for _ in range(value):
             cluster_data.append(centers[key])
     return cluster_data
 
@@ -67,20 +67,33 @@ def get_max_value_index(values):
 
 
 def apply_kmeans_on_single_image(img_url):
+    """
+    :param img_url: image to apply kmeans on
+    :return: returns weighted centers
+    """
     clt = KMeans(n_clusters=3)
     print(f"Applying KMeans on Image : {img_url} on the process: {getpid()}")
     cluster_data = []
     try:
         img = cv.imread(img_url)
         img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
-        clt.fit(img.reshape(-1, 3))
+
+        # downscale the image
+        print('Original Dimensions : ', img.shape)
+        scale_percent = 20
+        width = int(img.shape[1] * scale_percent / 100)
+        height = int(img.shape[0] * scale_percent / 100)
+        dim = (width, height)
+        resized_img = cv.resize(img, dim, interpolation=cv.INTER_AREA)
+        print('Resized Dimensions : ', resized_img.shape)
+
+        clt.fit(resized_img.reshape(-1, 3))
         percentage = calculate_percentage(clt)
         for key, value in percentage.items():
             for _ in range(value):
                 cluster_data.append(clt.cluster_centers_[key])
     except Exception as ex:
-        print("Could not read broken image")
-        pass
+        print("Could not read broken image", ex)
     return cluster_data
 
 
@@ -103,42 +116,6 @@ def get_common_color_v2(phrase):
     # clustering on top of all cluster centers from 20 images
     print("Applying KMeans on Combined Data of Size: ", len(cluster_data))
     clt = KMeans(n_clusters=3)
-    clt.fit(cluster_data)
-    print("Final three Colors: ", clt.cluster_centers_)
-    final_percentage = calculate_percentage(clt)
-    print("Percentage of Colors: ", final_percentage)
-
-    # finding the center with max percentage
-    max_center_index = get_max_value_index(final_percentage)
-    final_col = '#%02x%02x%02x' % tuple([round(x) for x in clt.cluster_centers_[max_center_index]])
-    print("Color with Maximum Percentage: ", final_col)
-    return final_col
-
-
-def get_common_color(phrase):
-    """
-    :param phrase: english phrase for which the color to be determined
-    :return: the hex code color
-    """
-    img_list = os.listdir(phrase)
-    print("No of images fetched: ", len(img_list))
-    clt = KMeans(n_clusters=3)
-    cluster_data = []
-    for img_url in img_list:
-        url = phrase + "/" + img_url
-        print("Applying KMeans on Image : " + url)
-        try:
-            img = cv.imread(url)
-            img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
-            clt.fit(img.reshape(-1, 3))
-            percentage = calculate_percentage(clt)
-            cluster_data = copy_items_in_list(percentage, clt.cluster_centers_, cluster_data)
-        except Exception as ex:
-            print("Could not read broken image")
-            pass
-
-    # clustering on top of all cluster centers from 20 images
-    print("Applying KMeans on Combined Data of Size: ", len(cluster_data))
     clt.fit(cluster_data)
     print("Final three Colors: ", clt.cluster_centers_)
     final_percentage = calculate_percentage(clt)
