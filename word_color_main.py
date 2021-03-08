@@ -17,7 +17,8 @@ estimated_color_list = []
 for directory in dir_list:
     print("\n\nPhrase: ", directory)
     print("=======================")
-    color = ip.get_common_color("images/" + directory)
+    color1 = ip.get_common_color("images/" + directory)
+    color = ip.get_common_color_v3("images/" + directory)
     estimated_color_list.append(color + " " + directory)
 
 # dump estimated color in a text file

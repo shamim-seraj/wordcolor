@@ -1,15 +1,1 @@
-#ffff00 lemon
-#00ffff ocean
-#0000ff clear sky
-#710421 red wine
-#cd8a44 wooden table
 #FF6347 tomato
-#d5cec6 cauliflower
-#6bae45 cabbage
-#f06f22 carrot
-#417022 capsicum
-#ffffff milk
-#6c3f30 chocolate
-#b10803 apple
-#fee638 ripe banana
-#c15c3c pile of bricks
