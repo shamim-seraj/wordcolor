@@ -1,11 +1,18 @@
-# ColorMappingProject
-Project Outline:
-The goal of this project is that given any word or phrase, it will be able to represent that input data in its HTML color form
-  
-First Phase Tasks:
-* Collect about 200 data samples in this format- (e.g.- #ffffff milk) and create a text file with that:
-    About 150 words have been listed with their html hex code values for initial input sample dataset. This file consists of random words or phrases that are used in daily lives and can be easily represented with any color. The colors have been searched manually from the internet and have been listed with the respective word or phrase
-* Develop a test environment for this dataset and derive its mean, standard deviation and variance distance of the text file from a predefined(#ffffff) color:
-    Following functions have been implemnted: A function for converting the color which for now only returns the predefined color(#ffffff) and separate functions for mean (m), standard deviation (sd) and variance (var) which calculates the values. Also, a function is implemented that loads the data from the text file. In built numpy functions have been used to calculate the m, sd, var values
-* Collect images for the sample dataset from duckduckgo
-* Develop the color generator function which produces the most common color out of all the 20 images for a particular data sample
+# Features
+For any given word or phrase, the software would be able to represent the word/phrase into a color. Currently, the software takes words/phrases from a data.txt file(included and can be updated), loops through all of them, download 5(can be updated) images per word/phrase and save them in corresponding directories. Then it again loops through all the directories, processes those images to finally decide/estimate a color for that phrase.
+
+# How to Run
+Currently, the application runs from terminal. The future plan is to develop a Graphical User Interface where users can easily input a word or a phrase. To run the application, download the code as a zip file, unzip it, move into the project(wordcolor-main) directory and run the following commands-
+
+To download all the necessary libraries-
+```
+pip3 install -r requirements.txt
+```
+To run the application-
+```
+python3 word_color_main.py
+```
+To run all the test codes-
+```
+python3 -m pytest
+```
