@@ -145,6 +145,7 @@ def get_common_color_v2(phrase):
     print("Color with Maximum Percentage: ", final_col)
     return final_col
 
+
 def get_common_color_v3(phrase):
     """
     :param phrase: english phrase for which the color to be determined
@@ -189,6 +190,3 @@ def get_common_color_v3(phrase):
     final_col = '#%02x%02x%02x' % tuple([round(x) for x in clt.cluster_centers_[max_center_index]])
     print("Color with Maximum Percentage: ", final_col)
     return final_col
-
-
-
