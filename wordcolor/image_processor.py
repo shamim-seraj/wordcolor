@@ -121,6 +121,8 @@ def get_common_color_v2(phrase):
     """
     img_list = os.listdir(phrase)
     print("No of images fetched: ", len(img_list))
+
+
     for idx in range(len(img_list)):
         img_list[idx] = f"{phrase}/{img_list[idx]}"
     pool = multiprocessing.Pool(processes=5)
@@ -129,6 +131,8 @@ def get_common_color_v2(phrase):
     for cluster in output_data:
         for data in cluster:
             cluster_data.append(data)
+
+
 
     # clustering on top of all cluster centers from 20 images
     print("Applying KMeans on Combined Data of Size: ", len(cluster_data))
@@ -161,29 +165,32 @@ def get_common_color_v3(phrase):
         print("Applying KMeans on Image : " + url)
         img = cv.imread(url)
         img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
-        clt.fit(img.reshape(-1, 3))
+
+        # downscale the image
+        scale_percent = 20
+        width = int(img.shape[1] * scale_percent / 100)
+        height = int(img.shape[0] * scale_percent / 100)
+        dim = (width, height)
+        resized_img = cv.resize(img, dim, interpolation=cv.INTER_AREA)
+
+        clt.fit(resized_img.reshape(-1, 3))
         perc = get_perc_list(clt)
         perc_list.append(perc)
         cluster_data.append(clt.cluster_centers_)
-        for i in range(len(perc)):
-            print(perc[i], "-", clt.cluster_centers_[i])
 
     flat_cluster_data = []
     for sublist in cluster_data:
         for item in sublist:
             flat_cluster_data.append(item)
-    print(flat_cluster_data)
     flat_perc_list = []
     for sublist in perc_list:
         for item in sublist:
             flat_perc_list.append(item)
-    print(flat_perc_list)
+
     # clustering on top of all cluster centers from 20 images
-    print("Applying weighted KMeans on Combined Data of Size: ", len(cluster_data))
+    print("Applying weighted KMeans on Combined Data of Size: ", len(flat_cluster_data))
     clt.fit(flat_cluster_data, sample_weight=flat_perc_list)
-    print("Final three Colors after weighted kmeans: ", clt.cluster_centers_)
     final_percentage = calculate_percentage(clt)
-    print("Percentage of Colors: ", final_percentage)
 
     # finding the center with max percentage
     max_center_index = get_max_value_index(final_percentage)
@@ -199,7 +206,7 @@ def download_image_and_extract_color(phrase):
         if len(os.listdir(path)) > 0:
             print('Image directory already exists for the phrase: ' + phrase)
     else:
-        print("Downloading images...\n\n")
+        print("Downloading images for the phrase: " + phrase)
         ddg.download(phrase, "images/" + phrase, 5)
-    common_color = get_common_color_v2("images/" + phrase)
+    common_color = get_common_color_v3("images/" + phrase)
     return common_color
