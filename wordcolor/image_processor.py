@@ -190,3 +190,16 @@ def get_common_color_v3(phrase):
     final_col = '#%02x%02x%02x' % tuple([round(x) for x in clt.cluster_centers_[max_center_index]])
     print("Color with Maximum Percentage: ", final_col)
     return final_col
+
+
+def download_image_and_extract_color(phrase):
+    # check if this phrase already exists
+    path = 'images/' + phrase
+    if os.path.isdir(path):
+        if len(os.listdir(path)) > 0:
+            print('Image directory already exists for the phrase: ' + phrase)
+    else:
+        print("Downloading images...\n\n")
+        ddg.download(phrase, "images/" + phrase, 5)
+    common_color = get_common_color_v2("images/" + phrase)
+    return common_color
