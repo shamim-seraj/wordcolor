@@ -163,20 +163,23 @@ def get_common_color_v3(phrase):
     for img_url in img_list:
         url = phrase + "/" + img_url
         print("Applying KMeans on Image : " + url)
-        img = cv.imread(url)
-        img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
+        try:
+            img = cv.imread(url)
+            img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
 
-        # downscale the image
-        scale_percent = 20
-        width = int(img.shape[1] * scale_percent / 100)
-        height = int(img.shape[0] * scale_percent / 100)
-        dim = (width, height)
-        resized_img = cv.resize(img, dim, interpolation=cv.INTER_AREA)
+            # downscale the image
+            scale_percent = 20
+            width = int(img.shape[1] * scale_percent / 100)
+            height = int(img.shape[0] * scale_percent / 100)
+            dim = (width, height)
+            resized_img = cv.resize(img, dim, interpolation=cv.INTER_AREA)
 
-        clt.fit(resized_img.reshape(-1, 3))
-        perc = get_perc_list(clt)
-        perc_list.append(perc)
-        cluster_data.append(clt.cluster_centers_)
+            clt.fit(resized_img.reshape(-1, 3))
+            perc = get_perc_list(clt)
+            perc_list.append(perc)
+            cluster_data.append(clt.cluster_centers_)
+        except Exception as ex:
+            print("Could not read broken image", ex)
 
     flat_cluster_data = []
     for sublist in cluster_data:

@@ -8,7 +8,7 @@ if __name__ == '__main__':
     estimated_color_list = []
     counter = 1
     for phrase in data_file:
-        print(f"Image No: {counter}")
+        print(f"Phrase No: {counter}")
         print("===============")
         phrase = phrase[:-1]
         common_color = ip.download_image_and_extract_color(phrase)
