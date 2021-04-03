@@ -157,6 +157,8 @@ def get_common_color_v3(phrase):
     """
     img_list = os.listdir(phrase)
     print("No of images fetched: ", len(img_list))
+    if len(img_list) == 0:
+        return "No Color Found"
     clt = KMeans(n_clusters=3)
     cluster_data = []
     perc_list = []
@@ -190,6 +192,9 @@ def get_common_color_v3(phrase):
         for item in sublist:
             flat_perc_list.append(item)
 
+    if len(flat_cluster_data) == 0:
+        return "No Color Found"
+
     # clustering on top of all cluster centers from 20 images
     print("Applying weighted KMeans on Combined Data of Size: ", len(flat_cluster_data))
     clt.fit(flat_cluster_data, sample_weight=flat_perc_list)
@@ -210,6 +215,9 @@ def download_image_and_extract_color(phrase):
             print('Image directory already exists for the phrase: ' + phrase)
     else:
         print("Downloading images for the phrase: " + phrase)
-        ddg.download(phrase, "images/" + phrase, 5)
+        try:
+            ddg.download(phrase, "images/" + phrase, 5)
+        except Exception as ex:
+            print("Could not download images", ex)
     common_color = get_common_color_v3("images/" + phrase)
     return common_color
