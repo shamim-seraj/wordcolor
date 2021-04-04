@@ -27,6 +27,6 @@ def color():
     else:
         print("Downloading images...\n\n")
         ddg.download(phrase, "images/" + phrase, 5)
-    common_color = ip.get_common_color_v2("images/" + phrase)
+    common_color = ip.get_common_color_v3("images/" + phrase)
     data = {'phrase': phrase, 'color': common_color}
     return render_template('color.html', data=data)

@@ -20,14 +20,6 @@ def test_calculate_percentage():
     assert val_list == [26, 30, 43]
 
 
-def test_copy_items_in_list():
-    """
-    :return: nothing
-    """
-    res = [[1, 2, 3], [1, 2, 3], [2, 4, 6], [2, 4, 6], [1, 3, 5], [1, 3, 5], [1, 3, 5]]
-    assert ip.copy_items_in_list({0: 2, 1: 2, 2: 3}, [[1, 2, 3], [2, 4, 6], [1, 3, 5]], []) == res
-
-
 def test_get_max_value_index():
     """
     :return: nothing
