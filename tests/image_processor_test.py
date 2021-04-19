@@ -1,10 +1,10 @@
 """
 This module is to test all the functions of the module "image_processor.py"
 """
+import re
 import cv2 as cv
 from sklearn.cluster import KMeans
 from wordcolor import image_processor as ip
-import re
 
 
 def test_calculate_percentage():
@@ -26,11 +26,11 @@ def test_get_perc_list():
     :return: nothing
     """
     img = cv.imread("test_image.jpg")
-    #print(img.shape)
+    # print(img.shape)
     img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
     clt = KMeans(n_clusters=3)
     clt.fit(img.reshape(-1, 3))
-    assert(ip.get_perc_list(clt)) == [43, 30, 26]
+    assert (ip.get_perc_list(clt)) == [43, 30, 26]
 
 
 def test_get_max_value_index():
@@ -47,10 +47,10 @@ def test_get_common_color_v3():
     :return: nothing
     """
     common_color_valid = ip.get_common_color_v3("test_data/valid_data")
-    assert type(common_color_valid) == str
+    assert isinstance(common_color_valid, str)
     regex = "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
-    p = re.compile(regex)
-    assert re.search(p, common_color_valid) is not None
+    pattern = re.compile(regex)
+    assert re.search(pattern, common_color_valid) is not None
 
     common_color_empty = ip.get_common_color_v3("test_data/empty_data")
     assert common_color_empty == "No Color Found"

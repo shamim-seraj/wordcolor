@@ -2,22 +2,30 @@
 This is the driver module
 """
 
+import os
+import DuckDuckGoImages as ddg
 from flask import Flask
 from flask import render_template
 from flask import request
-app = Flask(__name__)
 import wordcolor.image_processor as ip
-import DuckDuckGoImages as ddg
-import os
+
+app = Flask(__name__)
 
 
 @app.route('/')
 def index(name=None):
+    """
+    :param name:
+    :return: returns the welcome html page
+    """
     return render_template('hello.html', name=name)
 
 
 @app.route('/color')
 def color():
+    """
+    :return: returns the html with appropriate color
+    """
     phrase = request.args.get('word')
     # check if this phrase already exists
     path = 'images/' + phrase
