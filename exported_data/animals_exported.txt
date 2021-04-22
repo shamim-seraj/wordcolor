@@ -1,0 +1,769 @@
+#7d7f53 Aardvark
+#926747 Abyssinian
+#b4bdc8 Adelie Penguin
+#7b7065 Affenpinscher
+#61663f Afghan Hound
+#382c16 African Bullfrog
+#555843 African Bush Elephant
+#d6b192 African Civet
+#89995c African Clawed Frog
+#757d62 African Forest Elephant
+#535843 African Palm Civet
+#20242a African Penguin
+#4b5830 African Tree Toad
+#a3815a African Wild Dog
+#7d6f6d Ainu
+#9f9465 Airedale Terrier
+#d2d0cf Akbash
+#b8b9bb Akita
+#d4d8d9 Alaskan Malamute
+#2675ab Albacore Tuna
+#ebecea Albatross
+#353b2d Aldabra Giant Tortoise
+#a3a697 Alligator
+#6f7b6c Alligator Gar
+#ccc6bc Alpaca
+#5d564b Alpine Dachsbracke
+#b4a9af Amazon River Dolphin (Pink Dolphin)
+#767b54 American Alsatian
+#cec5c5 American Bulldog
+#694a35 American Cocker Spaniel
+#a6916f American Coonhound
+#47543b American Eskimo Dog
+#3f391c American Foxhound
+#89826e American Pit Bull Terrier
+#695843 American Staffordshire Terrier
+#362f22 American Water Spaniel
+#a3a182 Amur Leopard
+#4c4b3b Anatolian Shepherd Dog
+#857b72 Anchovies
+#313546 Angelfish
+#8d8c5a Ant
+#736f60 Anteater
+#b49f72 Antelope
+#839653 Appenzeller Dog
+#142721 Arapaima
+#c6cedf Arctic Fox
+#8591a0 Arctic Hare
+#918e91 Arctic Wolf
+#8b8b69 Armadillo
+#454639 Asian Elephant
+#b9b3a4 Asian Giant Hornet
+#30261d Asian Palm Civet
+#70735c Asiatic Black Bear
+#879a6b Aurochs
+#c8c9bd Aussiedoodle
+#a3a475 Australian Cattle Dog
+#82795f Australian Kelpie Dog
+#c2c7c3 Australian Labradoodle
+#c8c1be Australian Mist
+#2d2623 Australian Shepherd
+#53572c Australian Terrier
+#6b6355 Avocet
+#756949 Axolotl
+#988775 Aye Aye
+#827e68 Baboon
+#473c2d Bactrian Camel
+#66744c Badger
+#18826c Baiji
+#ada392 Balinese
+#34312a Banded Palm Civet
+#473723 Bandicoot
+#a49f90 Banjo Catfish
+#b46836 Barb
+#988a5c Barn Owl
+#7d776d Barnacle
+#1f8497 Barracuda
+#6e7568 Barramundi Fish
+#8e8845 Basenji Dog
+#263a3d Basking Shark
+#b59979 Basset Fauve de Bretagne
+#8d8160 Basset Hound
+#88775d Bassetoodle
+#43372d Bat
+#46492d Bavarian Mountain Hound
+#cfc0b3 Beagle
+#6b6d5d Bear
+#b3c096 Bearded Collie
+#a7928d Bearded Dragon
+#a6a7a2 Beaver
+#323f1e Bedlington Terrier
+#99a066 Beetle
+#2d3b39 Beluga Sturgeon
+#343d20 Bengal Tiger
+#45412a Bernedoodle
+#292623 Bernese Mountain Dog
+#22350c Bichir
+#312c21 Bichon Frise
+#d0cac5 Biewer Terrier
+#312f28 Binturong
+#33671c Bird
+#302417 Birds Of Paradise
+#b7b2ae Birman
+#8c765d Bison
+#7d8fa4 Black Marlin
+#b5bbbe Black Rhinoceros
+#2e2a29 Black Russian Terrier
+#cbc3c1 Black Widow Spider
+#bcafa9 Blobfish
+#473528 Bloodhound
+#bac2c3 Blue Jay
+#718272 Blue Lacy Dog
+#223b51 Blue Whale
+#354563 Bluefin Tuna
+#e5e4df Bluetick Coonhound
+#918766 Bobcat
+#3d372e Bolognese Dog
+#b3b0af Bombay
+#cfbb8f Bongo
+#25435e Bonito Fish
+#272823 Bonobo
+#464b30 Booby
+#84886b Border Collie
+#86776b Border Terrier
+#7b7353 Bordoodle
+#897f59 Bornean Orang-utan
+#303821 Borneo Elephant
+#e0dad3 Boston Terrier
+#70898f Bottlenose Dolphin
+#3a3e2e Bowfin
+#a4b8cc Bowhead Whale
+#dad0c0 Boxer Dog
+#a48b70 Boxerdoodle
+#86754b Boykin Spaniel
+#898e65 Brazilian Terrier
+#aa8766 British Timber
+#b7b2a8 Brown Bear
+#4c4130 Budgerigar
+#352c29 Buffalo
+#183c5b Bull Shark
+#b9b5b3 Bull Terrier
+#868077 Bulldog
+#899044 Bullfrog
+#86805d Bullmastiff
+#3f3833 Bumblebee
+#504844 Burmese
+#877846 Burrowing Frog
+#95ae9e Butterfly
+#7f88b5 Butterfly Fish
+#7a735a Caiman
+#6a5c4c Caiman Lizard
+#e1d8ca Cairn Terrier
+#6b4a2d Camel
+#ad8160 Camel Spider
+#bbbcbf Canaan Dog
+#cecdcc Canadian Eskimo Dog
+#766a4d Capybara
+#574f3a Caracal
+#7e8243 Carolina Dog
+#413c2d Carp
+#b5c4a0 Cassowary
+#c7bcae Cat
+#679334 Caterpillar
+#21281d Catfish
+#778945 Cavalier King Charles Spaniel
+#a87559 Cavapoo
+#af8f6f Centipede
+#a2a888 Cesky Fousek
+#9bb19b Chameleon
+#45433b Chamois
+#c09b69 Cheetah
+#dfd8bc Chesapeake Bay Retriever
+#8c6753 Chicken
+#4e463a Chihuahua
+#393127 Chimaera
+#93a06e Chimpanzee
+#867c6f Chinchilla
+#918e6d Chinese Crested Dog
+#3a4646 Chinese Paddlefish
+#363733 Chinook
+#2d343b Chinstrap Penguin
+#7f774e Chipmunk
+#948275 Chipoo
+#b59b7f Chow Chow
+#3f3928 Cichlid
+#2f3124 Clouded Leopard
+#523b2b Clownfish
+#374327 Clumber Spaniel
+#b5ad88 Coati
+#533d2f Cockapoo
+#9ea174 Cockatoo
+#ba9e82 Cockroach
+#778383 Codfish
+#234c5b Coelacanth
+#859350 Collared Peccary
+#82724d Collie
+#342d35 Colossal Squid
+#968d6a Common Buzzard
+#90855c Common Frog
+#627573 Common Loon
+#7b8a4d Common Toad
+#8f9697 Cooper’s Hawk
+#9c9c89 Coral
+#9d8b75 Corgipoo
+#676a4c Cotton-top Tamarin
+#827463 Cougar
+#433729 Cow
+#5e563e Coyote
+#917356 Crab
+#878e68 Crab-Eating Macaque
+#3d392e Crane
+#6e6e6a Crested Penguin
+#acad81 Crocodile
+#808f6a Cross River Gorilla
+#91a061 Curly Coated Retriever
+#605437 Cuscus
+#8f8da2 Cuttlefish
+#b5c58f Dachshund
+#b8b4b2 Dalmadoodle
+#95b2ca Dalmatian
+#687b30 Darwin’s Frog
+#5f5a3f Deer
+#826241 Desert Locust
+#c7bdad Desert Rain Frog
+#d3bda0 Desert Tortoise
+#44382a Deutsche Bracke
+#847a41 Dhole
+#77613f Dingo
+#7b7735 Discus
+#272827 Doberman Pinscher
+No Color Found Dodo
+#393f19 Dog
+#777350 Dogo Argentino
+#b68859 Dogue De Bordeaux
+#284b74 Dolphin
+#4c4744 Donkey
+#7c795b Dormouse
+#563f2f Doxiepoo
+#0f0909 Dragonfish
+#606d51 Dragonfly
+#45421f Drever
+#676f71 Drum Fish
+#8c937c Duck
+#4b848d Dugong
+#253216 Dunker
+#22636e Dusky Dolphin
+#3f392c Dwarf Crocodile
+#2b2722 Eagle
+#a6a171 Earwig
+#799359 Eastern Gorilla
+#6e8162 Eastern Lowland Gorilla
+#433728 Echidna
+#ada777 Edible Frog
+#46453f Eel
+#525550 Egyptian Mau
+#6c7056 Electric Eel
+#43422f Elephant
+#383e3d Elephant Seal
+#8b714b Elephant Shrew
+#4f4f4d Emperor Penguin
+#2d2920 Emperor Tamarin
+#70785f Emu
+#7b745c English Cocker Spaniel
+#535430 English Shepherd
+#463a2c English Springer Spaniel
+#d1cdbe Entlebucher Mountain Dog
+#443726 Epagneul Pont Audemer
+#dcdce0 Ermine
+#99a2ab Eskimo Dog
+#bbb1a3 Eskipoo
+#958e6e Estrela Mountain Dog
+#839eae Falcon
+#7fa2c1 False Killer Whale
+#5f4033 Fangtooth
+#cdbca7 Fennec Fox
+#9c9b71 Ferret
+#908856 Field Spaniel
+#9ea3ae Fin Whale
+#b59676 Finnish Spitz
+#757430 Fire-Bellied Toad
+#2f3c2a Fish
+#45402f Fishing Cat
+#825843 Flamingo
+#c0ba93 Flat-Coated Retriever
+#3a412b Florida Gar
+#839993 Flounder
+#4c4742 Fluke Fish (summer flounder)
+#454728 Fly
+#524339 Flying Squirrel
+#7d6b52 Fossa
+#504a27 Fox
+#7f845c Fox Terrier
+#4c463c French Bulldog
+#47421c Frigatebird
+#99824d Frilled Lizard
+#94958e Frilled Shark
+#716a2d Frog
+#958774 Fur Seal
+#b7c0c2 Galapagos Penguin
+#7b7b69 Galapagos Tortoise
+#322e1e Gar
+#3c431b Gecko
+#43453f Gentoo Penguin
+#787961 Geoffroys Tamarin
+#644737 Gerbil
+#83875a German Pinscher
+#d9d8d1 German Shepherd Guide
+#9a8f82 Gharial
+#8a7e48 Giant African Land Snail
+#323737 Giant Clam
+#737263 Giant Panda Bear
+#464544 Giant Schnauzer
+#bccab6 Giant Schnoodle
+#cbbfa9 Gibbon
+#846954 Gila Monster
+#acc5d2 Giraffe
+#85954f Glass Frog
+#7a7168 Glass Lizard
+#677b3f Glow Worm
+#d6d5d8 Goat
+#222758 Goblin Shark
+#997558 Golden Lion Tamarin
+#22201b Golden Masked Owl
+#343a22 Golden Oriole
+#a17f53 Golden Retriever
+#3c3324 Golden-Crowned Flying Fox
+#b6956f Goldendoodle
+#384742 Goliath Frog
+#d1cecd Goose
+#7e7857 Gopher
+#2d2f27 Gorilla
+#b8ad90 Gouldian Finch
+#908023 Grasshopper
+#79905e Gray Tree Frog
+#7d8b45 Great Dane
+#513f3b Great Danoodle
+#dcdcdd Great Pyrenees
+#054987 Great White Shark
+#727e5e Greater Swiss Mountain Dog
+#3d481b Green Anole
+#a0bc8d Green Bee-Eater
+#9ca872 Green Frog
+#8c925f Green Tree Frog
+#a0b2b9 Greenland Dog
+#756a57 Grey Mouse Lemur
+#6db1cf Grey Reef Shark
+#4a4b46 Grey Seal
+#929165 Greyhound
+#3d3529 Grizzly Bear
+#464635 Grouse
+#5c6a3d Guinea Fowl
+#816c3e Guinea Pig
+#293a0f Guppy
+#9d8177 Hagfish
+#236992 Hammerhead Shark
+#9b8463 Hamster
+#8c9158 Hare
+#383c2c Harpy Eagle
+#8f8576 Harrier
+#523e28 Havanese
+#624824 Havapoo
+#343531 Hawaiian Crow
+#494432 Hedgehog
+#7c8d60 Hercules Beetle
+#544d39 Hermit Crab
+#4e4d41 Heron
+#282e27 Herring
+#4a381c Highland Cattle
+#d9d6d5 Himalayan
+#c1b695 Hippopotamus
+#24241d Honey Badger
+#655e1f Honey Bee
+#36481a Hoopoe
+#2a3025 Horn Shark
+#c6c7a9 Hornbill
+#6c6442 Horned Frog
+#be9872 Horse
+#c4c1b6 Horseshoe Crab
+#64a4bc House Finch
+#7e794c Howler Monkey
+#745d53 Human
+#7d7b72 Humboldt Penguin
+#293810 Hummingbird
+#224e73 Humpback Whale
+#7e796d Huskydoodle
+#957f59 Hyena
+#a7a799 Ibis
+#cbd8de Ibizan Hound
+#444829 Iguana
+#2f3c4e Immortal Jellyfish
+#837567 Impala
+#8b845e Indian Elephant
+#50532c Indian Palm Squirrel
+#b3b0a3 Indian Rhinoceros
+#2f2e1b Indian Star Tortoise
+#a89573 Indochinese Tiger
+#2b3123 Indri
+#a0aa2f Insects
+#553e29 Irish Doodle
+#9b7c47 Irish Setter
+#3b4a2f Irish WolfHound
+#4b5937 Italian Greyhound
+#c7bfb7 Jack Russell
+#aea598 Jackal
+#695f39 Jaguar
+#d7d6d0 Japanese Chin
+#564a39 Japanese Macaque
+#827a64 Javan Rhinoceros
+#ad8e6f Javanese
+#40416f Jellyfish
+#b6a28e Jerboa
+#b4c786 Kakapo
+#a09b5f Kangaroo
+#373b26 Keel-Billed Toucan
+#3c4736 Keeshond
+#21282e Killer Whale
+#8a8271 King Cobra
+#9a9791 King Crab
+#827a65 King Penguin
+#7e8270 Kingfisher
+#41382a Kinkajou
+#7a742c Kiwi
+#d3cecf Koala
+#3b3a26 Komodo Dragon
+#826a6f Krill
+#a78a5a Kudu
+#5f452c Labradoodle
+#383f23 Labrador Retriever
+#718442 Ladybug
+#4d4643 Lamprey
+#201a10 Leaf-Tailed Gecko
+#222017 Lemming
+#cbc8c2 Lemur
+#432d16 Leopard
+#3e312b Leopard Cat
+#3a3925 Leopard Frog
+#34494c Leopard Seal
+#a58c68 Leopard Tortoise
+#998b6a Liger
+#b89362 Lion
+#3f3a32 Lionfish
+#6c6b66 Little Penguin
+#655d33 Lizard
+#c7c1b4 Llama
+#caba94 Loach
+#a27c56 Lobster
+#4b483b Long-Eared Owl
+#b7beac Longnose Gar
+#303626 Lungfish
+#a7a099 Lynx
+#7e7169 Macaroni Penguin
+#243914 Macaw
+#9f9b94 Magellanic Penguin
+#6b7167 Magpie
+#3e362e Maine Coon
+#232415 Malayan Civet
+#37341e Malayan Tiger
+#998f86 Maltese
+#966850 Maltipoo
+#1e4548 Manatee
+#393935 Mandrill
+#9a8251 Maned Wolf
+#96b4cc Manta Ray
+#594428 Marine Toad
+#404230 Markhor
+#c1b49d Marmot
+#bcac7d Marsh Frog
+#7e715e Masked Palm Civet
+#413525 Mastiff
+#39520d Mayfly
+#97806a Meerkat
+#2d4954 Megalodon
+#605c56 Mexican Free-Tailed Bat
+#8e8474 Milkfish
+#8e8177 Millipede
+#cbcbc2 Mini Labradoodle
+#9c988f Mink
+#124f6f Minke Whale
+#2c2e22 Mole
+#9a8b7e Molly
+#a18f39 Monarch Butterfly
+#a58557 Mongoose
+#72614d Mongrel
+#2f311f Monitor Lizard
+#887d73 Monkey
+#d2dbe3 Monkfish
+#91724e Monte Iberia Eleuth
+#4d4e4b Moorhen
+#332a1c Moose
+#31384b Moray Eel
+#a7866c Moth
+#1b1d19 Mountain Gorilla
+#b89f86 Mountain Lion
+#787161 Mourning Dove
+#b6a898 Mouse
+#d9d8d3 Mule
+#817c61 Muskrat
+#253e56 Narwhal
+#2b281c Neanderthal
+#8c9179 Neapolitan Mastiff
+#434235 Newfoundland
+#8d7768 Newfypoo
+#997355 Newt
+#b1a574 Nightingale
+#ceba94 Norfolk Terrier
+#1f2423 North American Black Bear
+#2e3419 Northern Inuit Dog
+#638579 Norwegian Forest
+#adab92 Numbat
+#908f8e Nurse Shark
+#2b2414 Ocelot
+#372e2f Octopus
+#bdbe94 Okapi
+#d5cec5 Old English Sheepdog
+#2b2720 Olm
+#877e6d Opossum
+#8a7c61 Orang-utan
+#3b3d2e Ostrich
+#a2988f Otter
+#897e69 Oyster
+#6c7f6c Paddlefish
+#847b5e Pademelon
+#504132 Pangolin
+#707a66 Panther
+#6d8e42 Parrot
+#474931 Patas Monkey
+#83896d Peacock
+#9a806e Peekapoo
+#464522 Pekingese
+#312e22 Pelican
+#454438 Penguin
+#b2aa87 Pere Davids Deer
+#a8acaa Peregrine Falcon
+#ded5ce Persian
+#8a7f79 Petit Basset Griffon Vendéen
+#816c43 Pheasant
+#857d6a Pied Tamarin
+#997c6a Pig
+#76716b Pigeon
+#b4b0ac Pika
+#8f8778 Pike Fish
+#afaca5 Pileated Woodpecker
+#977f59 Pink Fairy Armadillo
+#454e25 Piranha
+#b9ac8d Platypus
+#cbbea2 Pointer
+#2f3d19 Poison Dart Frog
+#a9aaa5 Polar Bear
+#d5cec1 Pomapoo
+#d0c7b9 Pomeranian
+#aaafb3 Pond Skater
+#7e7170 Poodle
+#323025 Poogle
+#6a5e23 Pool Frog
+#bfbbb5 Porcupine
+#7d9197 Porpoise
+#959468 Possum
+#a06947 Prawn
+#4c5131 Proboscis Monkey
+#263c4f Pufferfish
+#3a3833 Puffin
+#2e2625 Pug
+#cabdb2 Pugapoo
+#7f6a57 Puma
+#43414b Purple Emperor Butterfly
+#817670 Purple Finch
+#8e8c3c Puss Moth
+#2f2c25 Pygmy Hippopotamus
+#a09979 Pygmy Marmoset
+#a79273 Pyredoodle
+#4b4d36 Quail
+#95a578 Quetzal
+#5f523e Quokka
+#8e8170 Quoll
+#8d8d77 Rabbit
+#32332d Raccoon
+#342e26 Raccoon Dog
+#4b4230 Radiated Tortoise
+#392b2f Ragdoll
+#6f6257 Rat
+#cdc1af Rattlesnake
+#564433 Red Finch
+#978969 Red Fox
+#7b6755 Red Knee Tarantula
+#7d7a47 Red Panda
+#c1b49d Red Wolf
+#90744e Red-handed Tamarin
+#bcc0c4 Reindeer
+#b6ad9b Rhinoceros
+#40402b River Turtle
+#80784d Robin
+#bcc8d1 Rock Hyrax
+#302f2f Rockfish
+#494538 Rockhopper Penguin
+#706867 Roseate Spoonbill
+#7b7a5e Rottweiler
+#3b3d3d Royal Penguin
+#6e6e6a Russian Blue
+#433c26 Saarloos Wolfdog
+#3a2e26 Saber-Toothed Tiger
+#c2c7d6 Sable
+#c39e6a Saiga
+#757665 Saint Berdoodle
+#d3cdc9 Saint Bernard
+#c4bbac Salamander
+#887562 Salmon
+#afb0ad Samoyed
+#4b4230 Sand Lizard
+#2c201c Saola
+#8e8881 Sardines
+#27606d Sawfish
+#403e32 Schnoodle
+#858065 Scimitar-horned Oryx
+#a78e6f Scorpion
+#b5a28d Scorpion Fish
+#1e2628 Sea Dragon
+#818181 Sea Lion
+#6e6966 Sea Otter
+#a4895e Sea Slug
+#363224 Sea Squirt
+#a4a295 Sea Turtle
+#332d32 Sea Urchin
+#8a7c66 Seahorse
+#b1b6bd Seal
+#5b4e35 Serval
+#194565 Shark
+#495235 Sheep
+#d6d3cd Sheepadoodle
+#c5bda5 Shepadoodle
+#50472e Shiba Inu
+#d6cdc8 Shih Tzu
+#553317 Shrimp
+#312d22 Siamese
+#727c90 Siamese Fighting Fish
+#2b2825 Siberian
+#cccfd4 Siberian Husky
+#8b806d Siberian Tiger
+#948f6b Siberpoo
+No Color Found Silver Dollar
+#91948f Skate Fish
+#5a625a Skipjack Tuna
+#7d8252 Skunk
+#847f63 Sloth
+#d5c187 Slow Worm
+#475515 Snail
+#bbae8c Snake
+#84846c Snapping Turtle
+#bbc4d4 Snowshoe
+#747e5b Snowshoe Hare
+#bcbabb Snowy Owl
+#c5cbcf Somali
+#84755a South China Tiger
+#938474 Spadefoot Toad
+#837a5f Sparrow
+#b6afaa Spectacled Bear
+#315ca9 Sperm Whale
+#868e65 Spider Monkey
+#69694e Spiny Dogfish
+#c5c89c Spixs Macaw
+#edb745 Sponge
+#736d45 Spotted Gar
+#ced7bf Springerdoodle
+#242a2d Squid
+#5d4f30 Squirrel
+#878d4c Squirrel Monkey
+#828854 Sri Lankan Elephant
+#7a7a60 Staffordshire Bull Terrier
+#a9a88b Stag Beetle
+#a19273 Starfish
+#314749 Steller’s Sea Cow
+#6f7c45 Stick Insect
+#426e82 Stingray
+#52552c Stoat
+#806d3d Striped Rocket Frog
+#27312b Sturgeon
+#777558 Sucker Fish
+#b6b49b Sugar Glider
+#323327 Sumatran Elephant
+#413726 Sumatran Orang-utan
+#38391f Sumatran Rhinoceros
+#484b2a Sumatran Tiger
+#32342a Sun Bear
+#3a4849 Swai Fish
+#333c47 Swan
+#4e4d36 Swedish Vallhund
+#a4a499 Tamaskan
+#f3a441 Tang
+#4b4320 Tapanuli Orang-utan
+#898e72 Tapir
+#2a79aa Tarpon
+#909750 Tarsier
+#8a7142 Tasmanian Devil
+#937d48 Tawny Owl
+#80885d Teddy Roosevelt Terrier
+#797773 Termite
+#27370d Tetra
+#bf7b61 Thorny Devil
+#513b22 Tibetan Mastiff
+#ddb9a9 Tiffany
+#9a927e Tiger
+#927e55 Tiger Salamander
+#183e61 Tiger Shark
+#6b7162 Toadfish
+#8a7e5c Tortoise
+#c5c299 Toucan
+#a47b64 Toy Poodle
+#2a2a17 Tree Frog
+#bac2c7 Tropicbird
+#ac9882 Tuatara
+#91b8c5 Tuna
+#9ba5a1 Turkey
+#736f6d Turkish Angora
+#37351e Uakari
+#4a491f Uguisu
+#c1c6ab Umbrellabird
+#5b6440 Utonagan
+#534c3f Vampire Bat
+#8d5b57 Vampire Squid
+#689790 Vaquita
+#848573 Vervet Monkey
+#898c63 Vulture
+#c7c19c Wallaby
+#7d898e Walleye Fish
+#3b3734 Walrus
+#2e3740 Wandering Albatross
+#8a8152 Warthog
+#37381f Wasp
+#90946d Water Buffalo
+#42462a Water Dragon
+#3b4423 Water Vole
+#414027 Weasel
+#444235 Weimardoodle
+#403d24 Welsh Corgi
+#334012 West Highland Terrier
+#282a21 Western Gorilla
+#656358 Western Lowland Gorilla
+#938071 Westiepoo
+#065590 Whale Shark
+#697f55 Whippet
+#544d3e White Rhinoceros
+#2d3523 White Tiger
+#262d1b White-Faced Capuchin
+#353821 Whooping Crane
+#7d7b59 Wild Boar
+#44403a Wildebeest
+#4c3e30 Wolf
+#332e2c Wolf Eel
+#99956e Wolf Spider
+#7f6f61 Wolffish
+#978e66 Wolverine
+#9c9b7b Wombat
+#c8ae8d Wood Frog
+#8e7166 Woodlouse
+#726c5e Woodpecker
+#a3b7e1 Woolly Mammoth
+#c0c7a9 Woolly Monkey
+#42372c Wrasse
+#bab39f Wyoming Toad
+#394c41 X-Ray Tetra
+#e9f6f6 Xeru
+#af9a77 Yak
+#696855 Yellow-Eyed Penguin
+#215068 Yellowfin Tuna
+#402a21 Yorkie Poo
+#d8d2c1 Yorkshire Terrier
+#857a64 Zebra
+#578b87 Zebra Shark
+#7a8659 Zebu
+#aba07e Zonkey
+#4d4330 Zorse
