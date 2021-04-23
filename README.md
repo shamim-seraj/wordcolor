@@ -25,3 +25,8 @@ To run all the test codes-
 ```
 python3 -m pytest
 ```
+To run coverage test-
+```
+coverage run --omit 'venv/*' -m pytest
+coverage report -m
+```
