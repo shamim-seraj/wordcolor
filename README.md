@@ -4,6 +4,9 @@ For any given word or phrase, the software would be able to represent the word/p
 # Working Principle
 ![alt text](https://ucb3e5ac2ee0ed797b4b48ba0a28.previews.dropboxusercontent.com/p/thumb/ABLRCDThQEPyXQHjLgq-gUxou3VyTd3FZJE9srTNRqRRDqAF2cwfhEE-jbmusCi0aiRamt5IrSF4uvfK1QmaKtgrncpPdYrxhRQ0MmXan3QKpq1LVMJuQuXch-Uc2qclr3kp17kpas7AjIy3sCAoXn7RC4II2nXNKCn-cYRmaRmmoYtoTZedcfKmN_e9NGN1_Z3jNPKWX6eLmV9vLQOJS9R0QgOMm_ChJY0DIASMTSB2rBQ2frYXkG5yB3idZIC53CZMftjY42gBnVO6j-3p1Bb0JXHjKcbG2kqUdtnw-pfH2uvckHsID0k8IEKKhjITGT7re-Iu0RMh2XIEGapxVvGEgB4TVztnXbDCsTxeIFokDaflCeIey4IeYOA9EOa6eynLG8bJWpJ7BPZh3Vj_BeFd/p.jpeg?fv_content=true&size_mode=5)
 
+# Dataset Generation
+We collected 10K color data. We managed to find 8000 bird names, 769 animal names, and 1334 minaral names. We used our software to collect color codes for all these phrases. The data can be found in the _exported_data_ directory.
+
 # How to Run
 Currently, the application has a web interface. We are planning to host the application and make it public so that users can easily input a word or a phrase from anywhere without having to run the whole application. 
 To run the application now, download the code as a zip file, unzip it, move into the project(wordcolor-main) directory and run the following commands-
